@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+
+ol, ul, menu, summary {
+    list-style: none;
+}
+
+:root {
+        @font-face {
+            font-family: 'T-012';
+            src: url(assets/Font/T-012.otf);
+        }
+        font-family: monospace;
+         /* Site Colors */
+        --white: #f8f7f3ff;
+        --grey: rgb(135, 134, 131);
+        --black: #050405ff;
+}
+
+h2 {
+    font-family: 'T-012';
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+    display: flex;
+}
+
+body {
+	min-height: 100svh;
+	background: black;
+}
+
+p {
+    line-height: 1.5;
+}
+
+div {
+	padding: 1rem;
+	background: transparent;
+}
+
+nav {
+    font-family: 'T-012';
+	padding: 1rem;
+	color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    font-family: 'T-012';
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: .5rem;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: black;
+}
+
+section {
+    padding: 4rem;
+    background-color: white;
+}
+
+.site-header {
+    background-image: url(../images/XENON\ Cover\ 3\ Small.jpeg);
+    object-position: bottom left;
+    background-position:left 135rem top 30rem;
+    font-family: 'T-012';
+    font-size: medium;
+}
+
+.site-header > div {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header-img {
+    width: 30rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 1.5rem;
+    object-fit: contain;
+}
+
+
+.section-about {
+   font-family: monospace;
+   display: flex;
+   align-items: start;
+   gap: 2rem;
+}
+
+.section-about-img {
+    width: 12rem;
+}
+
+.section-work {
+    font-family: 'T-012';
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.section-work-project {
+    width: 100%;
+    min-height: 12rem;
+}
+
+.section-work-project:first-child {
+    grid-column: span 3;
+}
+
+.work-link {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.work-link > span {
+    display: flex;
+    padding: 2rem;
+    height: 100%;
+    justify-content: start;
+    align-items: end;
+    font-size: 2rem;
+}
+
+.section-work-project-1 {
+    background-image: url("../images/KUSOZU@3x\ Small.jpeg");
+    object-fit: fill;
+    background-position: cover;
+}
+
+.section-work-project-2 {
+    background-image: url("../images/DEOXIDE\ 2\ Small.jpeg");
+    object-fit: fill;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.section-work-project-3 {
+    background-image: url("../images/BLEEDRUNNER@2x\ Small.jpeg");
+    object-fit: fill;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.section-work-project-4 {
+    background-image: url("../images/DEOXIDE\ 2\ Small.jpeg");
+    object-fit: fill;
+    background-position: left;
+    background-repeat: no-repeat;
+}
