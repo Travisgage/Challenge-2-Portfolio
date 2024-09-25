@@ -2,7 +2,7 @@
 
 A personal portfolio page for Travis Phillips
 
-This portfolio page includes a navigation bar, an About Me seciton with a headshot, links to examples of work, and a footer section with contact information.
+A simple portfolio page includes a navigation bar, sections for About Me, previous examples of work, and a footer section with contact information. These are mostly placeholders to be modified and updated at a later date.
 
 Please see the link below to the deployed application: 
 
