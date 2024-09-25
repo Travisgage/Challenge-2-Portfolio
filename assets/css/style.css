@@ -1,24 +1,23 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-    
 
 ol, ul, menu, summary {
     list-style: none;
 }
 
 :root {
-        @font-face {
-            font-family: 'T-012';
-            src: url(assets/Font/T-012.otf);
-        }
-        font-family: monospace;
-         /* Site Colors */
-        --white: #f8f7f3ff;
-        --grey: rgb(135, 134, 131);
-        --black: #050405ff;
+    @font-face {
+        font-family: 'T-012';
+        src: url(assets/Font/T-012.otf);
+    }
+    font-family: monospace;
+    /* Site Colors */
+    --white: #f8f7f3ff;
+    --grey: rgb(135, 134, 131);
+    --black: #050405ff;
 }
 
 h2 {
@@ -32,8 +31,8 @@ img {
 }
 
 body {
-	min-height: 100svh;
-	background: black;
+    min-height: 100svh;
+    background: black;
 }
 
 p {
@@ -41,14 +40,14 @@ p {
 }
 
 div {
-	padding: 1rem;
-	background: transparent;
+    padding: 1rem;
+    background: transparent;
 }
 
 nav {
     font-family: 'T-012';
-	padding: 1rem;
-	color: white;
+    padding: 1rem;
+    color: white;
     font-size: 2rem;
 }
 
@@ -64,7 +63,7 @@ a {
     color: var(--white);
     text-decoration: none;
 }
-  
+
 a:hover {
     color: black;
 }
@@ -77,7 +76,7 @@ section {
 .site-header {
     background-image: url(../images/XENON\ Cover\ 3\ Small.jpeg);
     object-position: bottom left;
-    background-position:left 135rem top 30rem;
+    background-position: left 135rem top 30rem;
     font-family: 'T-012';
     font-size: medium;
 }
@@ -100,12 +99,11 @@ section {
     object-fit: contain;
 }
 
-
 .section-about {
-   font-family: monospace;
-   display: flex;
-   align-items: start;
-   gap: 2rem;
+    font-family: monospace;
+    display: flex;
+    align-items: start;
+    gap: 2rem;
 }
 
 .section-about-img {
@@ -162,7 +160,6 @@ section {
     object-fit: fill;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .section-work-project-4 {
@@ -170,4 +167,75 @@ section {
     object-fit: fill;
     background-position: left;
     background-repeat: no-repeat;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .site-header > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .site-header-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-about-img {
+        width: 10rem;
+    }
+
+    .section-work {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-work-project {
+        min-height: 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-work {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+    }
+
+    .work-link > span {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    section {
+        padding: 2rem; /* Less padding for smaller screens */
+    }
+
+    .site-header {
+        font-size: 1.2rem; /* Smaller header font size */
+    }
 }
