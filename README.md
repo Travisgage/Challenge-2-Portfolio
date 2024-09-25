@@ -8,9 +8,8 @@ Please see the link below to the deployed application:
 
 https://travisgage.github.io/Challenge-2-Portfolio/
 
-![Screenshot](<https://drive.google.com/file/d/1v3PRSVA0Gum-GiQAJs19X_y7UvQPrKTs/view?usp=drive_link>)
+![Screenshot](<./assets/images/Profile-screenshot.jpeg>)
 
 Please feel free to contact me with any comments, questions, or concerns:
 
 [email](travisgagephillips@gmail.com)
-
